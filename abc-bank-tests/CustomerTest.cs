@@ -45,7 +45,7 @@ namespace abc_bank_tests
             
             Transfer(checkingAccount, savingsAccount, 1000.0);
             
-            Assert.AreEqual(9000.0, checkingAccount.GetAmount() + savingsAccount.GetAmount, 1.0e-5);
+            Assert.AreEqual(9000.0, checkingAccount.sumTransactions() + savingsAccount.sumTransactions(), 1.0e-5);
         }
 
         [TestMethod]
