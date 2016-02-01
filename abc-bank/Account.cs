@@ -11,11 +11,6 @@ namespace abc_bank
         private readonly int accountType;
         public List<Transaction> transactions;
         private double interest;
-        
-        public double Interest
-	    {
-	    	get {return interest;}
-	    }
 
         public Account(int accountType) 
         {
