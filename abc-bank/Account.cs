@@ -8,11 +8,11 @@ namespace abc_bank
 {
     public class Account
     {
-        private readonly int accountType;
+        private readonly AccountType accountType;
         public List<Transaction> transactions;
         private double interest;
 
-        public Account(int accountType) 
+        public Account(AccountType accountType) 
         {
             this.accountType = accountType;
             this.transactions = new List<Transaction>();
@@ -61,7 +61,7 @@ namespace abc_bank
             return amount;
         }
 
-        public int GetAccountType() 
+        public AccountType GetAccountType() 
         {
             return accountType;
         }
